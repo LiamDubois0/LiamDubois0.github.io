@@ -1,6 +1,6 @@
 body {
-    background: rgb(250, 228, 26);
-    color: rgb(45, 45, 45);
+    background: rgb(237,206,0);
+    color: rgb(26,53,85);
     padding: 10px;
     font-family: arial;
 }
@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(44, 223, 255);
+    background: rgb(98,176,221);
    margin: 0 auto;
    margin-bottom: 20px;
     display: flex;
@@ -38,7 +38,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(44, 223, 255);
+    background: rgb(98,176,221);
     display: flex;
 }
 .sidebar {
@@ -55,7 +55,7 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px rgb(44, 223, 255) ridge;
+    border: 4px rgb(98,176,221) ridge;
     padding: 8px;
 }
 h2, h3 {
