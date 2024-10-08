@@ -33,7 +33,15 @@ $(function () {
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
     /////////////////////////////////////////////////
-
+    createPlatform(1000, 100, 100, 10);
+    createPlatform(100, 94, 100, 10);
+    createPlatform(100, 233, 100, 10);
+    createPlatform(100, 372, 100, 10);
+    createPlatform(100, 511, 100, 10);
+    createPlatform(0, 650, 100, 10);
+    createPlatform(250, 150, 1, 100);
+    createPlatform(350, 350, 1, 100);
+    createPlatform(450, 550, 1, 100);
     // TODO 1
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
@@ -50,7 +58,7 @@ $(function () {
 
 
 
-    
+    createCannon("left", 650, 1000, 100025, 25);
     // TODO 3
     // Create cannons
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
