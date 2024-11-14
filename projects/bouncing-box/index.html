@@ -7,17 +7,17 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 70px;
-			height: 70px;
-			background-color: teal;
+			width: 200px;
+			height: 200px;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx0brZ40DBguMN_BMsdxay9Y4DmC44pYT8fxz6QsxnUUt0jHY:https://pbs.twimg.com/media/E4rRxXuWYAYVSR2.png&s);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
 			display: block;
 			position: absolute;
-			top: 100px;
+			top: 400px;
 			/* Change me! */
-			left: 0px;
+			left: 800px;
 		}
 
 		.board {
@@ -67,7 +67,9 @@
 
 			// TODO 2 - Variable declarations 
 
-
+			var positionX = 0
+			var points = 0
+			var speed = 10
 
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
@@ -75,9 +77,16 @@
 			turn it around! 
 			*/
 			function update() {
-
-
-			};
+				positionX = positionX + speed;
+				console.log(positionX)
+				moveBoxTo(positionX);
+				if (positionX > boardWidth) {
+					speed  = -speed
+				}
+				if (positionX < 0) {
+					speed = speed * -1
+				}
+			}
 
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
@@ -85,8 +94,15 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-
-
+				positionX = 0;
+				points = points + 1
+				changeBoxText(points);
+				if (speed < 0){
+					speed = speed - 3
+				}
+				if (speed > 0){
+					speed = speed + 3
+				}
 			};
 
 
